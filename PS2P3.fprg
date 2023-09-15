@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-09 03:55:16 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDk7MDM6MzM6MjQgUE07MjkyMQ=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDk7MDM6NTU6MTYgUE07MzszMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totalamt" type="Real" array="False" size=""/>
+            <declare name="recamt" type="Real" array="False" size=""/>
+            <input variable="totalamt"/>
+            <assign variable="totalamt" expression="totalamt"/>
+            <assign variable="recamt" expression="totalamt/3"/>
+            <output expression="&quot;After evenly splitting the amount received after completing the job between you and your 2 friends, You will each receive $&quot; &amp;recamt" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

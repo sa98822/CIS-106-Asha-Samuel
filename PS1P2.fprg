@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-02 05:57:00 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDI7MDQ6MzM6MDUgUE07MjkxNA=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDI7MDU6NTc6MDAgUE07MjszMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="grosspay" type="Real" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="hours"/>
+            <input variable="rate"/>
+            <assign variable="lastname" expression="lastname"/>
+            <assign variable="grosspay" expression="hours * rate"/>
+            <output expression="&quot;Your last name is&quot; &amp;lastname" newline="True"/>
+            <output expression="&quot;Your gross pay is $&quot; &amp;grosspay" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

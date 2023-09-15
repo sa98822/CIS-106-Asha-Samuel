@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-02 07:09:53 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDI7MDY6MzM6MjIgUE07MjkxNQ=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDI7MDc6MDk6NTMgUE07NDszMDM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="cred" type="Integer" array="False" size=""/>
+            <declare name="tuition" type="Integer" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="cred"/>
+            <assign variable="lastname" expression="lastname"/>
+            <assign variable="tuition" expression="(250 * cred) +100"/>
+            <output expression="&quot;Your last name is&quot;   &amp;lastname" newline="True"/>
+            <output expression="&quot;Your total tuition is $&quot; &amp;tuition" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

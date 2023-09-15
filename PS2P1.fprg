@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-09 03:12:40 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDg7MDY6MDk6MDcgUE07MjkyNw=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDk7MDM6MTI6NDAgUE07MzszMDI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tickersymb" type="String" array="False" size=""/>
+            <declare name="shares" type="Integer" array="False" size=""/>
+            <declare name="costpershare" type="Real" array="False" size=""/>
+            <declare name="invested" type="Real" array="False" size=""/>
+            <input variable="tickersymb"/>
+            <input variable="shares"/>
+            <input variable="costpershare"/>
+            <assign variable="invested" expression="shares * costpershare"/>
+            <output expression="&quot;Your stock ticker symbol is.&quot; &amp; tickersymb" newline="True"/>
+            <output expression="&quot;You invested $&quot; &amp;invested" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

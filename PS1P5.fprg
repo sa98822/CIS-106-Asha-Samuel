@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-02 07:46:53 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDI7MDc6MTA6MDQgUE07MjkxMQ=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDI7MDc6NDY6NTMgUE07MTszMDMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="discpercent" type="Real" array="False" size=""/>
+            <declare name="discprice" type="Real" array="False" size=""/>
+            <input variable="price"/>
+            <input variable="discpercent"/>
+            <assign variable="discpercent" expression="discpercent"/>
+            <assign variable="discprice" expression="price- (price * discpercent)"/>
+            <output expression="&quot;The discount percent as a decimal is&quot; &amp;discpercent" newline="True"/>
+            <output expression="&quot;The discount price of the item is $&quot; &amp;discprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

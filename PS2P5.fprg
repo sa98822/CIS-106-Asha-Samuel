@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-10 01:51:35 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMTA7MDE6MjY6NTMgUE07MjkxNQ=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMTA7MDE6NTE6MzUgUE07NDszMDI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <declare name="P" type="Real" array="False" size=""/>
+            <input variable="r"/>
+            <assign variable="A" expression="3.174 * r * r"/>
+            <assign variable="P" expression="2*3.174*r"/>
+            <output expression="&quot;Area=&quot; &amp;A" newline="True"/>
+            <output expression="&quot;Perimeter=&quot; &amp;P" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

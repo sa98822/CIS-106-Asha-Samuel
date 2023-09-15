@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-09 03:33:16 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDk7MDM6MTY6NDIgUE07MjkyMg=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMDk7MDM6MzM6MTYgUE07MjszMDMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Lname" type="String" array="False" size=""/>
+            <declare name="midterm" type="Real" array="False" size=""/>
+            <declare name="final" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="Lname"/>
+            <input variable="midterm"/>
+            <input variable="final"/>
+            <assign variable="Lname" expression="Lname"/>
+            <assign variable="total" expression="0.4*midterm + 0.6* final"/>
+            <output expression="&quot;Your last name is&quot; &amp;Lname" newline="True"/>
+            <output expression="&quot;The total number of exam points you received is&quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
