@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-15 07:11:36 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMTU7MDY6NDI6MTMgUE07MjkxOQ=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMTU7MDc6MTE6MzYgUE07MjszMDMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ogshareprice" type="Real" array="False" size=""/>
+            <declare name="stockprice" type="Real" array="False" size=""/>
+            <declare name="qty" type="Integer" array="False" size=""/>
+            <declare name="currentprice" type="Real" array="False" size=""/>
+            <declare name="stockvalue" type="Real" array="False" size=""/>
+            <input variable="ogshareprice"/>
+            <input variable="stockprice"/>
+            <input variable="qty"/>
+            <assign variable="stockvalue" expression="(stockprice-ogshareprice)* qty"/>
+            <output expression="&quot;The stock value is $&quot; &amp;stockvalue" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

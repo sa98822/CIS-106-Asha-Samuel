@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-15 10:18:39 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMTU7MTA6MTA6MTQgUE07MjkxMA=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMTU7MTA6MTg6MzkgUE07MjszMDM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fname" type="String" array="False" size=""/>
+            <declare name="steps" type="Integer" array="False" size=""/>
+            <declare name="calburned" type="Real" array="False" size=""/>
+            <input variable="fname"/>
+            <input variable="steps"/>
+            <assign variable="calburned" expression="steps * 0.25"/>
+            <output expression="&quot; Calories burned: &quot; &amp;calburned" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

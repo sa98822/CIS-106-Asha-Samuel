@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-15 10:07:37 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMTU7MDc6MTE6MzggUE07MjkyMw=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMTU7MTA6MDc6MzcgUE07MjszMDMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="tipvalue" type="Real" array="False" size=""/>
+            <declare name="ttltip" type="Real" array="False" size=""/>
+            <declare name="tip" type="Real" array="False" size=""/>
+            <input variable="total"/>
+            <assign variable="tip" expression="0.10"/>
+            <assign variable="total" expression="total"/>
+            <assign variable="tipvalue" expression="total * tip"/>
+            <assign variable="ttltip" expression="total + tipvalue"/>
+            <output expression="&quot; Total cost of meal without tip=&quot; &amp;total" newline="True"/>
+            <output expression="&quot;Tip value&quot; &amp;tipvalue" newline="True"/>
+            <output expression="&quot;Total with 10% tip: &quot; &amp;ttltip" newline="True"/>
+            <assign variable="tip" expression="0.18"/>
+            <assign variable="total" expression="total"/>
+            <assign variable="tipvalue" expression="total * tip"/>
+            <assign variable="ttltip" expression="total+ tipvalue"/>
+            <output expression="&quot; Total cost of meal without tip=&quot; &amp;total" newline="True"/>
+            <output expression="&quot;Value of 15% tip:&quot; &amp;tipvalue" newline="True"/>
+            <output expression="&quot;Total with 15% tip: &quot; &amp;ttltip" newline="True"/>
+            <assign variable="total" expression="total"/>
+            <assign variable="tip" expression="0.20"/>
+            <assign variable="tipvalue" expression="total * tip"/>
+            <assign variable="ttltip" expression="total + (total * tipvalue)"/>
+            <output expression="&quot; Total cost of meal without tip=&quot; &amp;total" newline="True"/>
+            <output expression="&quot;Value of 20% tip&quot; &amp;tipvalue" newline="True"/>
+            <output expression="&quot;Total with 20% tip: &quot; &amp;ttltip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
