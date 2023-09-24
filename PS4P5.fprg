@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-24 05:50:21 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMjQ7MDU6MTI6NDMgUE07MjkxOA=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMjQ7MDU6NTA6MjEgUE07MjszMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Lname" type="String" array="False" size=""/>
+            <declare name="dep" type="Integer" array="False" size=""/>
+            <declare name="grossincome" type="Real" array="False" size=""/>
+            <declare name="adj" type="Real" array="False" size=""/>
+            <declare name="taxrate" type="Real" array="False" size=""/>
+            <declare name="incometax" type="Real" array="False" size=""/>
+            <input variable="Lname"/>
+            <input variable="dep"/>
+            <input variable="grossincome"/>
+            <assign variable="adj" expression="(grossincome -dep)*12000"/>
+            <if expression="adj&gt;50000">
+                <then>
+                    <assign variable="taxrate" expression="0.20"/>
+                </then>
+                <else>
+                    <assign variable="taxrate" expression="0.10"/>
+                </else>
+            </if>
+            <assign variable="incometax" expression="adj * taxrate"/>
+            <if expression="incometax&lt;0">
+                <then>
+                    <assign variable="incometax" expression="100"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Last name:&quot; &amp;Lname" newline="True"/>
+            <output expression="&quot;Gross income: &quot; &amp;grossincome" newline="True"/>
+            <output expression="&quot;Number of dependents:&quot; &amp;dep" newline="True"/>
+            <output expression="&quot;Adjusted gross income: $&quot; &amp;adj" newline="True"/>
+            <output expression="&quot;Income tax: $&quot; &amp;taxrate" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-24 04:29:46 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMjQ7MDI6MzQ6NDIgUE07MjkxOA=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMDktMjQ7MDQ6Mjk6NDYgUE07MzszMDM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="item" type="String" array="False" size=""/>
+            <declare name="qty" type="Integer" array="False" size=""/>
+            <declare name="uprice" type="Real" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <input variable="qty"/>
+            <input variable="item"/>
+            <if expression="item==&quot;A&quot;">
+                <then>
+                    <assign variable="uprice" expression="10.00"/>
+                </then>
+                <else>
+                    <assign variable="uprice" expression="20.00"/>
+                </else>
+            </if>
+            <assign variable="extprice" expression="qty * uprice"/>
+            <output expression="&quot; Enter item:&quot; &amp;item" newline="True"/>
+            <output expression="&quot;Unitprice: $&quot; &amp;uprice" newline="True"/>
+            <output expression="&quot;Extended price: $&quot; &amp;extprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
