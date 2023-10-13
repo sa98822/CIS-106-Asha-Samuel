@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-12 11:28:15 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMTAtMTI7MTA6NTI6NDQgUE07MjkwOA=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMTAtMTI7MTE6Mjg6MTUgUE07MTszMDE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="entry" type="String" array="False" size=""/>
+            <declare name="yes" type="String" array="False" size=""/>
+            <declare name="continue" type="String" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <input variable="entry"/>
+            <declare name="Lname" type="String" array="False" size=""/>
+            <declare name="exam1" type="Real" array="False" size=""/>
+            <declare name="exam2" type="Integer" array="False" size=""/>
+            <declare name="avg" type="Integer" array="False" size=""/>
+            <if expression="entry==&quot;yes&quot;">
+                <then>
+                    <input variable="Lname"/>
+                    <input variable="exam1"/>
+                    <input variable="exam2"/>
+                    <output expression="&quot;continue&quot;" newline="True"/>
+                    <while expression="entry== &quot;yes&quot;">
+                        <assign variable="avg" expression="(exam1*exam2)/2"/>
+                        <assign variable="count" expression="count+1"/>
+                        <output expression="&quot;Last name&quot; &amp;Lname" newline="True"/>
+                        <output expression="&quot;Average score= &quot; &amp;avg" newline="True"/>
+                        <output expression="&quot;count&quot; &amp;count" newline="True"/>
+                        <input variable="entry"/>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;end of Program&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

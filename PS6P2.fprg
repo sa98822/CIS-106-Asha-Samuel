@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-12 10:52:33 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMTAtMTE7MDg6MDI6NTAgUE07MjkwNg=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMTAtMTI7MTA6NTI6MzMgUE07NDszMDE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="start" type="Integer" array="False" size=""/>
+            <declare name="stop" type="Integer" array="False" size=""/>
+            <declare name="incr" type="Integer" array="False" size=""/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <input variable="start"/>
+            <input variable="stop"/>
+            <input variable="incr"/>
+            <assign variable="num" expression="start"/>
+            <while expression="num&lt;=stop">
+                <output expression="&quot;numbers: &quot; &amp;num" newline="True"/>
+                <assign variable="num" expression="num+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
