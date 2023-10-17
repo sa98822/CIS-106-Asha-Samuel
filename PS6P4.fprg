@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rsamu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-16 07:06:36 PM"/>
+        <attribute name="created" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMTAtMTQ7MDU6NDQ6MTkgUE07MjkxNw=="/>
+        <attribute name="edited" value="cnNhbXU7REVTS1RPUC1MSjhKU0dEOzIwMjMtMTAtMTY7MDc6MDY6MzYgUE07MzszMDI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="Lname" type="String" array="False" size=""/>
+            <declare name="hrs" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="employttl" type="Integer" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <declare name="sumgross" type="Real" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <assign variable="sumgross" expression="0"/>
+            <assign variable="count" expression="count+1"/>
+            <output expression="&quot;Would you like to continue? yes or no?&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response==&quot;yes&quot;">
+                <input variable="Lname"/>
+                <input variable="hrs"/>
+                <input variable="rate"/>
+                <if expression="hrs&lt;40">
+                    <then>
+                        <assign variable="gross" expression="rate * hrs"/>
+                    </then>
+                    <else>
+                        <assign variable="gross" expression="(rate * hrs) + 1.5 * (hrs-40) *rate"/>
+                    </else>
+                </if>
+                <assign variable="sumgross" expression="sumgross + gross"/>
+                <output expression="&quot;Sum of gross pay&quot; &amp;sumgross" newline="True"/>
+                <assign variable="count" expression="count+1"/>
+                <output expression="&quot;Number of Employees: &quot;&amp;count" newline="True"/>
+                <assign variable="avg" expression="sumgross/count"/>
+                <output expression="&quot;Average gross pay= &quot; &amp;avg" newline="True"/>
+                <input variable="response"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
